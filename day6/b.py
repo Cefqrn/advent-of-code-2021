@@ -13,11 +13,11 @@ for i in range(80):
     fish[6] += fish[8]
 
 # part 1
-print(sum(fish)+seven+eight)
+print(sum(fish))
 
 for i in range(256-80):
     fish.rotate(-1)
     fish[6] += fish[8]
 
 # part 2
-print(sum(fish)+seven+eight)
+print(sum(fish))
