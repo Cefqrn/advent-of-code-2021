@@ -8,8 +8,6 @@ fish = deque([0]*9, maxlen=9)
 for x in data:
     fish[x] += 1
 
-eight = 0
-seven = 0
 for i in range(80):
     fish.rotate(-1)
     fish[6] += fish[8]
