@@ -1,5 +1,4 @@
 import os
-from collections import defaultdict
 
 with open(os.path.join(os.path.dirname(__file__), "input")) as f:
     *data, = map(lambda x: [y.split() for y in  str.split(x, '|')], f.read().strip().split('\n'))
