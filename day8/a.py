@@ -37,6 +37,7 @@ for inp, out in data:
         for j, x in m.items():
             if set(num) == x:
                 break
+        p1 += len(num) in [2,3,4,7]
         output += 10**(3-i) * j
     p2 += output
 
