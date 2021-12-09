@@ -8,9 +8,6 @@ with open(os.path.join(os.path.dirname(__file__), "input")) as f:
 flagged = set()
 
 def flag_basin(x, y):
-    if (x, y) in flagged:
-        return 0
-
     flagged.add((x, y))
 
     size = 1
@@ -19,6 +16,9 @@ def flag_basin(x, y):
             continue
             
         if data[y+dy][x+dx] == 9:
+            continue
+    
+        if (x+dx, y+dy) in flagged:
             continue
         
         size += flag_basin(x+dx, y+dy)
