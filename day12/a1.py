@@ -17,7 +17,7 @@ def explore(start, explored):
                 if cave == "end":
                     path_count += 1
                     continue
-                path_count += explore(cave, explored.union({cave}))
+                path_count += explore(cave, explored | {cave})
             else:
                 path_count += explore(cave, explored)
     return path_count
