@@ -1,6 +1,5 @@
 import os
 from collections import defaultdict
-from copy import deepcopy
 
 with open(os.path.join(os.path.dirname(__file__), "input")) as f:
     data = f.read().split('\n\n')
